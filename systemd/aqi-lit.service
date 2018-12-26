@@ -1,0 +1,10 @@
+[Unit]
+Description=Air Quality Monitoring
+Requires=
+
+[Service]
+ExecStart=/usr/lib/aqi-lit/aqi_lit.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
