@@ -140,8 +140,8 @@ class AqiToBlinkStick(object):
 		aqipm10 = ((aqi[5] - aqi[4]) / (pm[5] - pm[4])) * (pm10 - pm[4]) + aqi[4]
 	elif (pm10 >= pm[5] and pm10 <= pm[6]):
 		aqipm10 = ((aqi[6] - aqi[5]) / (pm[6] - pm[5])) * (pm10 - pm[5]) + aqi[5]
-	elif (pm10 >= pm[6] and pm10 <= pm8):
-		aqipm10 = ((aqi[7] - aqi[6]) / (pm8 - pm[6])) * (pm10 - pm[6]) + aqi[6]
+	elif (pm10 >= pm[6] and pm10 <= pm[7]):
+		aqipm10 = ((aqi[7] - aqi[6]) / (pm[7] - pm[6])) * (pm10 - pm[6]) + aqi[6]
 
 	return aqipm10
 
