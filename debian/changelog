@@ -1,3 +1,9 @@
+aqi-lit (1.2) unstable; urgency=medium
+
+  * Turn off LEDs when they aren't needed.
+
+ -- Ryan Anderson <ryan@michonline.com>  Thu, 06 Jun 2019 21:36:59 -0700
+
 aqi-lit (1.1) unstable; urgency=medium
 
   * Fix bad reference to pm8 that should be pm[7]

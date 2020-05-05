@@ -67,9 +67,13 @@ class AqiToBlinkStick(object):
 
         for i in xrange(intensity2_5):
             self.bstick.set_color(0, i, *color2_5)
+        for i in xrange(intensity2_5, 5):
+            self.bstick.set_color(0, i, 0, 0, 0)
 
         for i in xrange(intensity10):
             self.bstick.set_color(1, i, *color10)
+        for i in xrange(intensity10, 5):
+            self.bstick.set_color(1, i, 0, 0, 0)
 
         active = self.loop_count % self.bstick.b_led_count
         for i in xrange(self.bstick.b_led_count):
