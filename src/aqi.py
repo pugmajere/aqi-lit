@@ -96,7 +96,7 @@ def cmd_set_id(id):
     read_response()
 
 class AqiData(object):
-    def __int__(self):
+    def __init__(self):
         cmd_set_sleep(0)
         cmd_set_mode(1)
         
